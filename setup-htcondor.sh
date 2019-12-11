@@ -25,7 +25,7 @@ rpm --import http://research.cs.wisc.edu/htcondor/yum/RPM-GPG-KEY-HTCondor
 yum -y --nogpgcheck install condor-procd condor-external-libs condor-bosco condor-classads condor-python condor
 
 ## Copyting config
-cp -v config/condor_config.$TYPE /etc/condor/
+cp -v config/condor_config.$TYPE /etc/condor/condor_config
 cp -v config/condor_ssh_to_job_sshd_config_template /etc/condor/
 cp -v config.d/* /etc/condor/config.d
 
